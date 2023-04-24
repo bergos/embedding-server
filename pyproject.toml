@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "embedding-server"
+version = "0.1.0"
+description = ""
+authors = ["bergi <bergi@axolotlfarm.org>"]
+readme = "README.md"
+packages = [{include = "embedding_server"}]
+
+[tool.poetry.dependencies]
+fastapi = "^0.91.0"
+python = "^3.10"
+sentence-transformers = "^2.2.2"
+torch = {url = "https://download.pytorch.org/whl/cpu/torch-1.13.1%2Bcpu-cp310-cp310-linux_x86_64.whl"}
+uvicorn = "^0.20.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
