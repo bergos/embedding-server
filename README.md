@@ -14,6 +14,14 @@ Multiple models can be given in a comma-separated string.
 
 ### Docker
 
+The following command will run the latest prebuilt image: 
+
+```bash
+docker run -it --rm -p 8080:80 ghcr.io/bergos/embedding-server:latestet
+```
+
+Open [http://localhost:8080/docs](http://localhost:8080/docs) in your browser to open the UI to browser the API.
+
 The Dockerfile loads the models during build time.
 No persistence is required.
 
@@ -28,5 +36,3 @@ And to spin up a local instance on port 8080:
 ```bash
 docker run -it --rm -p 8080:80 embedding-server
 ```
-
-Open [http://localhost:8080/docs](http://localhost:8080/docs) in your browser to open the UI to browser the API.
