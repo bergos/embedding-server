@@ -17,7 +17,7 @@ Multiple models can be given in a comma-separated string.
 The following command will run the latest prebuilt image: 
 
 ```bash
-docker run -it --rm -p 8080:80 ghcr.io/bergos/embedding-server:latestet
+docker run -it --rm -p 8080:80 ghcr.io/bergos/embedding-server:latest
 ```
 
 Open [http://localhost:8080/docs](http://localhost:8080/docs) in your browser to open the UI to browser the API.
